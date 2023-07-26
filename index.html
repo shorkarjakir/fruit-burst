@@ -18,6 +18,7 @@
       }
     }
   </script>
+  <!-- google fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
@@ -27,14 +28,27 @@
       font-family: 'Lato', sans-serif;
     }
   </style>
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/9a1cb14556.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header class="mx-auto">
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-[#F85559] px-16 rounded-full my-7 h-13">
       <div class="flex justify-between navbar">
-        <a class="btn btn-ghost normal-case text-xl"><img class="w-9" src="./images/icons/logo.svg" alt="">Fruit
-          Burst</a>
+        <div class="navbar hidden  lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="flex navbar lg:justify-center">
+          <a class="flex normal-case gap-1 items-center text-xl"><img class="w-9" src="./images/icons/logo.svg"
+              alt="">Fruit
+            Burst</a>
+        </div>
         <div class="dropdown">
           <label tabindex="2" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -51,15 +65,12 @@
         </div>
 
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Shop</a></li>
-          <li><a>All Fruits</a></li>
-        </ul>
+
+      <div class="navbar-end hidden lg:flex gap-2">
+        <div class="form-control">
+          <input type="text" placeholder="Search" class="input input-bordered w-40 md:w-auto rounded-full" />
+        </div>
       </div>
-    </div>
   </header>
   <main>
 
